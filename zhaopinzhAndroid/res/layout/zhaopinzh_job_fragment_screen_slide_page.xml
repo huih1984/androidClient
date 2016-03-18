@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <ListView
+            android:id="@+id/zhaopinzh_job_activity_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:descendantFocusability="blocksDescendants" android:background="@drawable/bg_board"/>
+    <TextView
+            android:id="@+id/zhaopinzh_job_activity_progress_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在加载..."
+            android:layout_centerInParent="true"/>
+    <ProgressBar
+            android:id="@+id/zhaopinzh_job_activity_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/zhaopinzh_job_activity_progress_textView"
+            android:layout_alignTop="@id/zhaopinzh_job_activity_progress_textView"
+            android:indeterminate="true"
+            style="?android:attr/progressBarStyleSmall"/>
+</RelativeLayout>

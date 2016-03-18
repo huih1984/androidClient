@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/traffic_layout">
+    <com.baidu.mapapi.map.MapView android:id="@+id/traffic_activity_bmapView"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:clickable="true"
+                                  android:minHeight="480dp"/>
+    <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/traffic_activity_popup_bus_button"
+            android:background="@drawable/action_bybus"
+            android:onClick="searchBusButtonProcess"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/traffic_activity_bmapView"
+            android:layout_marginTop="136dp"
+            android:layout_marginRight="16dp"
+            android:layout_alignRight="@id/traffic_activity_bmapView"/>
+    <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/traffic_activity_popup_car_button"
+            android:background="@drawable/action_bycar"
+            android:onClick="searchCarButtonProcess"
+            android:gravity="center_horizontal"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/traffic_activity_popup_bus_button"/>
+    <Button
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/traffic_activity_popup_foot_button"
+            android:background="@drawable/action_byfoot"
+            android:onClick="searchFootButtonProcess"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/traffic_activity_popup_car_button"/>
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:layout_alignParentEnd="false"
+            android:layout_alignBottom="@id/traffic_activity_bmapView"
+            android:layout_marginBottom="136dp"
+            android:visibility="gone" android:id="@+id/traffic_activity_pre_next_layout">
+        <Button android:id="@+id/pre"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/pre_"
+                android:onClick="nodeClick"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="16dp"
+                />
+        <Button android:id="@+id/next"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/next_"
+                android:onClick="nodeClick"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@id/traffic_activity_bmapView"/>
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_weight="2"
+            android:id="@+id/traffic_activity_scroll_view"
+            android:layout_alignBottom="@id/traffic_activity_bmapView"
+            android:background="#b0ffffff" android:alpha="200" android:visibility="gone">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/traffic_activity_text_view"
+                android:layout_weight="1"
+                android:paddingLeft="8dp"
+                android:layout_below="@+id/pre"
+                />
+    </ScrollView>
+
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/traffic_activity_search_history_listView"
+            android:layout_gravity="center"/>
+</RelativeLayout>

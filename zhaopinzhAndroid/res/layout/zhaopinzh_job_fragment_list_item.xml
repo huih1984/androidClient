@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:slide="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toggle_button_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+            android:id="@+id/zhaopinzh_job_fragment_concise"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/list_item_selector_background"
+            >
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent" android:paddingLeft="16dp" android:paddingRight="16dp">
+            <TextView
+                    android:id="@+id/zhaopinzh_job_fragment_job_name"
+                    android:layout_width="160dp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:focusableInTouchMode="false"
+                    android:text="职位名称"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:typeface="monospace" android:paddingLeft="4dp">
+            </TextView>
+            <TextView android:id="@+id/zhaopinzh_job_fragment_employer_name"
+                      android:layout_width="160dp"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/zhaopinzh_job_fragment_job_name"
+                      android:layout_alignLeft="@id/zhaopinzh_job_fragment_job_name"
+                      android:text="企业名称"
+                      android:textColor="@android:color/darker_gray"
+                      android:textSize="16sp"
+                      android:paddingLeft="4dp"/>
+            <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_alignLeft="@id/zhaopinzh_job_fragment_employer_name"
+                    android:layout_below="@id/zhaopinzh_job_fragment_employer_name"
+                    android:id="@+id/zhaopinzh_job_fragment_read_icon"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/read_icon"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:id="@+id/zhaopinzh_job_fragment_read_times_text_view"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/zhaopinzh_job_fragment_read_icon"
+                    android:layout_below="@id/zhaopinzh_job_fragment_employer_name" android:paddingLeft="4dp"/>
+            <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/zhaopinzh_job_fragment_conversation"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/zhaopinzh_job_fragment_read_times_text_view"
+                    android:layout_below="@id/zhaopinzh_job_fragment_employer_name"
+                    android:src="@drawable/comment"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:id="@+id/zhaopinzh_job_fragment_cment_cnt_text_view"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/zhaopinzh_job_fragment_conversation"
+                    android:layout_below="@id/zhaopinzh_job_fragment_employer_name"
+                    android:paddingLeft="4dp"/>
+            <ImageButton
+                    android:id="@+id/zhaopinzh_job_fragment_favorite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    android:src="@drawable/selector"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp" android:padding="2dp"/>
+            <TextView android:layout_width="120dp" android:layout_height="wrap_content" android:text="工作地点"
+                      android:id="@+id/zhaopinzh_job_fragment_workplace_text_view" android:textColor="@android:color/darker_gray"
+                      android:textSize="16sp"
+                      android:layout_toRightOf="@id/zhaopinzh_job_fragment_job_name"
+                      android:paddingLeft="4dp" android:layout_marginTop="4dp"/>
+            <TextView android:layout_width="120dp" android:layout_height="wrap_content" android:text="薪资待遇"
+                      android:id="@+id/zhaopinzh_job_fragment_payment_text_view"
+                      android:textColor="@android:color/darker_gray" android:textSize="16sp"
+                      android:layout_toRightOf="@id/zhaopinzh_job_fragment_job_name"
+                      android:layout_below="@id/zhaopinzh_job_fragment_workplace_text_view" android:paddingLeft="4dp"
+                      android:layout_toLeftOf="@id/zhaopinzh_job_fragment_favorite" android:layout_marginTop="4dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

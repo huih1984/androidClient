@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:id="@+id/campus_activity_action_bycar"-->
+          <!--android:title="@string/traffic_activity_bycar_action"-->
+          <!--android:icon="@drawable/ic_action_refresh"-->
+          <!--yourapp:showAsAction="ifRoom|collapseActionView"/>-->
+    <!--<item android:id="@+id/campus_activity_action_bybus"-->
+          <!--android:title="@string/traffic_activity_bybus_action"-->
+          <!--android:icon="@drawable/ic_action_refresh"-->
+          <!--yourapp:showAsAction="ifRoom|collapseActionView"/>-->
+    <!--<item android:id="@+id/campus_activity_action_byfoot"-->
+          <!--android:title="@string/traffic_activity_byfoot_action"-->
+          <!--android:icon="@drawable/ic_action_refresh"-->
+          <!--yourapp:showAsAction="ifRoom|collapseActionView"/>-->
+
+    <item android:id="@+id/traffic_activity_action_search"
+          android:title="@string/search_activity_search_label"
+          android:icon="@android:drawable/ic_menu_search"
+          yourapp:showAsAction="always"
+          yourapp:actionViewClass="android.support.v7.widget.SearchView"/>
+
+</menu>

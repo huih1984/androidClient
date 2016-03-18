@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/campuse_activity_item"
+              android:background="@drawable/list_item_selector_background">
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="2">
+        <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/campus_activity_image_view" android:layout_gravity="left|center_vertical"
+                android:src="@drawable/nju"
+                android:scaleType="fitCenter" android:padding="8dp" />
+        <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:id="@+id/campus_activity_add_new_image_view" android:layout_gravity="center_horizontal|top"
+                android:src="@drawable/add_hint" android:layout_alignRight="@id/campus_activity_image_view"
+                android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:visibility="gone"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_weight="5">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="近期宣讲会12场"
+                android:id="@+id/campus_activity_number" android:textSize="18sp"/>
+
+        <!--style="?android:attr/ratingBarStyleSmall"
+                style="@android:style/Widget.Holo.RatingBar.Small"-->
+        <RatingBar
+                android:id="@+id/campus_activity_rating_bar"
+                android:layout_marginTop="4dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:rating="2"
+                style="@style/ZhaopinStarRatingBar"/>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="16dp"
+            android:id="@+id/imageView1" android:layout_gravity="center" android:layout_weight="1"
+            android:src="@drawable/forword"/>
+</LinearLayout>

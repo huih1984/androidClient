@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_board">
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="公司名称"
+            android:textSize="18sp"
+            android:minHeight="48dp"
+            android:gravity="center_vertical"
+            android:id="@+id/comment_activity_employer_name_text_view" android:paddingLeft="4dp"/>
+
+    <RelativeLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent" android:layout_marginTop="8dp">
+        <ImageView android:layout_height="1dp"
+                   android:id="@+id/comment_divider"
+                   android:layout_width="fill_parent"
+                   android:src="#009966"/>
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_centerInParent="true"
+                  android:layout_below="@id/comment_divider"
+                  android:text="还没有人评论，赶快来抢占沙发！"
+                  android:id="@+id/comment_default_text_view"/>
+        <ListView
+                android:id="@+id/comment_list_view"
+                android:layout_height="fill_parent"
+                android:layout_width="wrap_content"
+                android:layout_below="@id/comment_divider"
+                />
+    </RelativeLayout>
+</LinearLayout>

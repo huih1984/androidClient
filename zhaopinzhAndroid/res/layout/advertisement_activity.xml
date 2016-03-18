@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bg_board">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="125dp"
+            android:id="@+id/advertisement_activity_frame_layout"
+            >
+        <android.support.v4.view.ViewPager
+                android:id="@+id/advertisement_activity_ad_viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+                android:id="@+id/advertisment_gallery_item_dot_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="105dp" android:background="@android:color/transparent">
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/first_relative_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/advertisement_activity_frame_layout"
+                    android:layout_marginTop="4dp">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/advertisement_activity_net_image_view"
+                android:src="@drawable/net"
+                android:scaleType="centerCrop"
+                />
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:src="@drawable/campus"
+                android:scaleType="centerCrop" android:layout_marginLeft="4dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/first_relative_layout"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/second_relative_layout">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/market"
+                android:scaleType="centerCrop"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="false"
+                android:src="@drawable/talk"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="4dp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

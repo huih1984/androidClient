@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:text="人才市场"
+
+            android:id="@+id/favorite_head_text_view" android:layout_gravity="center" android:background="#F7F7F7"
+            android:gravity="center" android:textColor="#2461B2"/>
+</LinearLayout>

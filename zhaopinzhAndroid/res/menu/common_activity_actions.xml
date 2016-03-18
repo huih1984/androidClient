@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <!--<item android:id="@+id/action_traffic"-->
+          <!--android:title="@string/common_activity_action_traffic"-->
+          <!--yourapp:showAsAction="collapseActionView"/>-->
+    <!--<item android:id="@+id/action_talk"-->
+          <!--android:title="@string/common_activity_action_talk"-->
+          <!--yourapp:showAsAction="collapseActionView"/>-->
+    <!--<item android:id="@+id/action_settings"-->
+          <!--android:title="@string/common_activity_action_settings"-->
+          <!--android:icon="@drawable/ic_action_settings"-->
+          <!--yourapp:showAsAction="collapseActionView"/>-->
+<!--    <item android:id="@+id/action_help"
+          android:title="@string/common_activity_action_help"
+          android:icon="@android:drawable/ic_menu_help"
+          yourapp:showAsAction="collapseActionView"/>-->
+        <!--<item android:id="@+id/action_feedback"-->
+          <!--android:title="@string/common_activity_action_feedback"-->
+          <!--yourapp:showAsAction="collapseActionView"/>-->
+</menu>

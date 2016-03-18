@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="file://$PROJECT_DIR$/assets/companyscale.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/jobtype.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/assets/runningInterval.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/weiyitech/zhaopinzh/util/PageManageUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/weiyitech/zhaopinzh/util/cache/ImageLoader.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/weiyitech/zhaopinzh/util/cache/MemoryCache.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/com/weiyitech/zhaopinzh/util/photoview" charset="UTF-8" />
+  </component>
+</project>
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="@android:color/darker_gray">
+    <TextView
+            android:layout_width="180dp"
+            android:layout_height="32dp"
+            android:text="已选"
+            android:textSize="14sp"
+            android:id="@+id/search_condition_activity_item_content_text_view"
+            android:layout_gravity="center" android:gravity="left|center_vertical"
+            android:textColor="#ffffff"/>
+    <ImageButton
+            android:id="@+id/search_condition_activity_selected_img_btn"
+            android:layout_height="32dp"
+            android:layout_width="32dp"
+
+            android:layout_alignParentRight="true" android:layout_marginRight="16dp"
+            android:background="@android:color/transparent" android:src="@drawable/to_close_icon"
+            android:scaleType="centerInside">
+    </ImageButton>
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_condition_activity_item_content_text_view"
+            android:id="@+id/search_condition_activity_selected_list_view"
+            android:background="@drawable/bg_board"
+            android:visibility="gone"
+            android:listSelector="@drawable/list_selector"
+            android:divider="@null"/>
+    <ImageView
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="#009966"
+            android:id="@+id/search_condition_divider"
+            android:layout_below="@id/search_condition_activity_selected_list_view"/>
+    <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="全部行业"
+            android:textSize="14sp"
+            android:layout_below="@id/search_condition_divider"
+            android:id="@+id/search_condition_activity_all_text_view"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp" android:textColor="#ffffff"/>
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/search_condition_activity_all_text_view"
+            android:id="@+id/search_condition_activity_all_list_view"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/bg_board"/>
+</RelativeLayout>

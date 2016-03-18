@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical" android:background="@drawable/bg_board">
+<LinearLayout
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:orientation="vertical" android:layout_marginLeft="4dp">
+            <RelativeLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent" android:layout_weight="1.5">
+                <TextView
+                        android:id="@+id/preach_meeting_preach_name"
+                        android:layout_width="180dp"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:focusableInTouchMode="false"
+                        android:singleLine="false"
+                        android:text="宣讲会名称"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textSize="14sp"
+                        android:layout_marginTop="4dp"
+                        android:typeface="monospace"
+                        />
+                <TextView
+                        android:id="@+id/preach_meeting_university"
+                        android:layout_width="fill_parent"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/preach_meeting_preach_name"
+                        android:text="学校"
+                        android:singleLine="false"
+                        android:textSize="14sp" android:typeface="serif" android:layout_marginTop="4dp"/>
+                <TextView android:id="@+id/preach_meeting_place" android:layout_width="240dp"
+                          android:gravity="left" android:layout_height="wrap_content"
+                          android:text="地点"
+                          android:singleLine="false"
+                          android:textSize="14sp" android:typeface="serif"
+                          android:layout_alignParentLeft="true" android:layout_below="@+id/preach_meeting_university"/>
+                <ImageButton
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:id="@+id/preach_meeting_favor_image_button" android:layout_gravity="right" android:padding="2dp"
+                        android:background="@drawable/selector" android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1.2" android:orientation="vertical">
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="开始时间："
+                        android:id="@+id/textView" android:layout_gravity="center" android:textSize="10sp"
+                        android:typeface="monospace"/>
+                <TextView
+                        android:id="@+id/preach_meeting_begin_time_textview"
+                        android:layout_width="wrap_content"
+                        android:gravity="left"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textSize="14sp" android:typeface="monospace"
+                        android:text="2012-02-01 09:00:00" android:layout_alignParentRight="true">
+                </TextView>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="结束时间："
+                        android:id="@+id/textView1" android:textSize="10sp" android:layout_marginTop="6dp"
+                        android:typeface="monospace"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2012-02-01 09:00:00"
+                        android:id="@+id/preach_meeting_end_time_textview"
+                        android:layout_alignLeft="@id/preach_meeting_begin_time_textview"
+                        android:textSize="14sp" android:textColor="?android:attr/textColorPrimary"
+                        android:typeface="monospace"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="浏览量：12"
+                        android:id="@+id/preach_meeting_read_times_text_view" android:layout_alignParentRight="true"
+                        android:textSize="10sp"
+                        android:typeface="monospace"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="招聘会说明"
+                        android:id="@+id/textView2" android:layout_gravity="center" android:textSize="18sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    <com.weiyitech.zhaopinzh.util.webview.MyWebView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/preach_meeting_web_view" android:layout_marginLeft="4dp" android:layout_marginRight="4dp"/>
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/job_activity_layout"
+              android:background="#F7F7F7">
+    <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/job_activity_job_pager"
+            android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:visibility="visible"/>
+
+        <!--<LinearLayout android:layout_width="fill_parent" android:layout_height="36dp" android:gravity="center"-->
+                      <!--android:orientation="horizontal">-->
+        <!--<ImageButton android:layout_height="36dp" android:layout_width="36dp"-->
+                     <!--android:src="@drawable/page_selector1" android:background="@android:color/transparent"></ImageButton>-->
+            <!--<ImageButton android:layout_height="36dp" android:layout_width="36dp"-->
+                         <!--android:src="@drawable/page_unsel_dot" android:background="@android:color/transparent"></ImageButton>-->
+            <!--<ImageButton android:layout_height="36dp" android:layout_width="36dp"-->
+                         <!--android:src="@drawable/page_unsel_dot" android:background="@android:color/transparent"></ImageButton>-->
+            <!--<ImageButton android:layout_height="36dp" android:layout_width="36dp"-->
+                         <!--android:src="@drawable/page_unsel_dot" android:background="@android:color/transparent"></ImageButton>-->
+            <!--<ImageButton android:layout_height="36dp" android:layout_width="36dp"-->
+                         <!--android:src="@drawable/page_unsel_dot" android:background="@android:color/transparent"></ImageButton>-->
+            <!--<ImageButton android:layout_height="36dp" android:layout_width="36dp"-->
+                         <!--android:src="@drawable/page_unsel_dot" android:background="@android:color/transparent"></ImageButton>-->
+        <!--</LinearLayout>-->
+
+</LinearLayout>

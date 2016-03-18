@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/advertisement_list_item" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"
+            android:layout_marginBottom="4dp" android:layout_marginTop="4dp" android:background="@drawable/image_board">
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="64dp"
+                android:id="@+id/advertisement_logo_image_view" android:layout_gravity="center"
+                android:padding="1dp"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="5月17日南京国展中心周六互动招聘会"
+                android:id="@+id/advertisement_fair_name_text_view" android:textSize="12sp"
+                android:paddingLeft="8dp"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="招聘时间：2014-06-01"
+                android:id="@+id/advertisement_time_text_view" android:textSize="12sp"
+                android:paddingLeft="8dp" android:textColor="@android:color/darker_gray"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="展位号：E-13"
+                android:id="@+id/advertisement_stand_number_text_view" android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" android:paddingLeft="8dp"/>
+    </LinearLayout>
+</LinearLayout>

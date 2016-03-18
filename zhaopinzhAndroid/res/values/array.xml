@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="job_action_list">
+        <item>招聘时间</item>
+        <item>浏览量</item>
+    </string-array>
+    <string-array name="preach_action_list">
+        <item>招聘时间</item>
+        <item>浏览量</item>
+        <item>最新发布</item>
+    </string-array>
+    <string-array name="net_job_action_list">
+        <item>浏览量</item>
+        <item>前程无忧网时间</item>
+        <item>智联招聘时间</item>
+        <item>中华英才网时间</item>
+    </string-array>
+    <string-array name="portrait_setting_name_list">
+        <item>竖屏显示</item>
+        <item>横屏显示</item>
+    </string-array>
+    <string-array name="home_activity_fragment_name_list">
+        <item>招聘会</item>
+        <item>参会企业</item>
+        <item>我的收藏</item>
+    </string-array>
+    <string-array name="campus_activity_fragment_name_list">
+        <item>宣讲会</item>
+        <item>宣讲企业</item>
+        <item>我的收藏</item>
+    </string-array>
+    <string-array name="net_job_concise_activity_fragment_name_list">
+        <item>网络职位</item>
+        <item>我的收藏</item>
+    </string-array>
+    <string-array name="zhaopinzh_job_concise_activity_fragment_name_list">
+        <item>职位</item>
+        <item>我的收藏</item>
+    </string-array>
+</resources>

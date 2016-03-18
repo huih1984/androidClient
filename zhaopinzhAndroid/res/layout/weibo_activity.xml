@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        >
+    <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:layout_centerHorizontal="true"
+            android:text="使用微博登录"
+            android:id="@+id/use_text_view" android:textSize="18sp"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:text="登录后，发表您对公司的评价和评分"
+            android:textColor="@android:color/black"
+            android:id="@+id/tint_text_view" android:textSize="14sp"/>
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center" android:layout_above="@+id/tint_text_view">
+        <ImageButton
+                android:id="@+id/sina_weibo_login_button"
+                android:background="@drawable/ic_com_sina_weibo_sdk_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        <View   android:layout_width="32dp"
+                android:layout_height="0dp"></View>
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_com_tencent_weibo_sdk_logo"
+                android:id="@+id/tencent_weibo_login_button"/>
+    </LinearLayout>
+</RelativeLayout>

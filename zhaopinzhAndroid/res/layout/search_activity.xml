@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.SearchView
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="64dp"
+            android:id="@+id/search_activity_search_view"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"/>
+    <Spinner
+            android:id="@+id/search_activity_spinner"
+            android:layout_height="48dp"
+            android:layout_width="64dp"></Spinner>
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/search_activity_search_view"
+            android:id="@+id/search_activity_search_condition_listView"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/bg_board"/>
+    <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="465dp"
+            android:id="@+id/search_activity_search_history_listView"
+            android:layout_gravity="center"
+            android:layout_alignBottom="@+id/search_activity_search_condition_listView"
+            android:layout_alignParentTop="true" android:layout_marginTop="226dp"/>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="32dp"
+        >
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="职位名称"
+            android:id="@+id/job_name_text_view"
+            android:layout_gravity="center_vertical|left"
+            android:layout_weight="2"
+            android:textSize="12sp"
+            android:gravity="center_vertical" android:background="@android:color/transparent"
+            android:layout_marginLeft="8dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="招聘人数：12"
+            android:id="@+id/recuitment_text_view" android:layout_weight="2" android:textSize="12sp"
+            android:layout_gravity="center_vertical|left" android:gravity="center_vertical"/>
+    <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="32dp" android:layout_weight="1">
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="16dp"
+                android:id="@+id/job_detail_activity_imageView1"
+                android:layout_weight="1"
+                android:src="@drawable/forword"
+                android:layout_gravity="center" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

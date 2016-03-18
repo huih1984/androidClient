@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="vertical" android:background="@drawable/bg_board">
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <RelativeLayout
+            android:orientation="vertical"
+            android:id="@+id/net_job_detail_job_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="职位名称"
+                android:textColor="@android:color/background_dark"
+                android:id="@+id/net_job_detail_jobname_text_view"
+                android:paddingLeft="4dp"
+                android:textSize="18sp" android:layout_marginLeft="4dp"/>
+        <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="3000"
+                android:id="@+id/net_job_detail_payment_text_view"
+                android:paddingLeft="4dp"
+                android:textSize="12sp" android:layout_marginRight="12dp"
+                android:textColor="#f0836e"
+                android:layout_alignBottom="@+id/net_job_detail_sexreq_text_view"
+                android:layout_alignParentRight="true" android:gravity="right"/>
+        <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="10"
+                android:layout_below="@+id/net_job_detail_jobname_text_view"
+                android:id="@+id/net_job_detail_demandnumber_text_view"
+                android:paddingLeft="4dp"
+                android:textSize="12sp" android:textColor="@android:color/darker_gray" android:layout_marginLeft="4dp"/>
+        <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:text="南京"
+                android:layout_below="@+id/net_job_detail_demandnumber_text_view"
+                android:id="@+id/net_job_detail_workplace_text_view"
+                android:paddingLeft="4dp"
+                android:textSize="12sp" android:layout_marginRight="4dp"
+                android:textColor="@android:color/darker_gray" android:layout_marginLeft="4dp"/>
+        <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_job_detail_edureq_text_view"
+                android:text="经验要求"
+                android:id="@+id/net_job_detail_expreq_text_view"
+                android:paddingLeft="4dp"
+                android:textSize="12sp" android:textColor="@android:color/darker_gray" android:layout_marginLeft="4dp"/>
+        <TextView
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/net_job_detail_workplace_text_view"
+                android:text="学历要求"
+                android:id="@+id/net_job_detail_edureq_text_view"
+                android:paddingLeft="4dp"
+                android:textSize="12sp" android:layout_marginRight="40dp"
+                android:textColor="@android:color/darker_gray" android:layout_marginLeft="4dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_job_detail_expreq_text_view"
+                android:text="性别要求"
+                android:layout_weight="1"
+                android:id="@+id/net_job_detail_sexreq_text_view"
+                android:layout_marginLeft="4dp" android:textSize="12sp" android:textColor="@android:color/darker_gray"
+                android:paddingLeft="4dp"/>
+        <ImageButton
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/net_job_detail_favor_image_button" android:layout_gravity="right"
+                android:padding="2dp"
+                android:background="@drawable/selector" android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp" android:layout_marginTop="8dp"
+                android:layout_alignTop="@+id/net_job_detail_demandnumber_text_view"/>
+        </RelativeLayout>
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/net_job_detail_job_layout"
+                android:src="@android:color/darker_gray"
+                android:id="@+id/imageView_split1"
+                android:paddingLeft="8dp" android:paddingRight="8dp"/>
+
+        <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView_split1"
+                android:id="@+id/net_job_detail_company_item_layout">
+            <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="公司名称"
+                    android:id="@+id/net_job_detail_company_employer_name"
+                    android:textSize="16sp" android:paddingLeft="4dp" android:layout_marginLeft="4dp"/>
+            <RatingBar
+                    android:id="@+id/net_job_detail_company_rating_bar"
+                    android:layout_toRightOf="@id/net_job_detail_company_employer_name"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:isIndicator="true"
+                    android:layout_gravity="left|center_vertical"
+                    style="@style/ZhaopinDiamondRatingBar" android:layout_marginTop="4dp"/>
+            <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/net_job_detail_company_employer_name"
+                    android:text="性质"
+                    android:id="@+id/net_job_detail_company_type"
+                    android:textSize="12sp"
+                    android:paddingLeft="4dp" android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="4dp"/>
+            <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/net_job_detail_activity_conversation"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/comment"
+                    android:layout_below="@id/net_job_detail_company_rating_bar"
+                    android:layout_alignLeft="@id/net_job_detail_company_rating_bar"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/net_job_detail_activity_cment_cnt_text_view"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:layout_toRightOf="@id/net_job_detail_activity_conversation"
+                    android:paddingLeft="4dp" android:layout_marginRight="16dp"
+                    android:layout_below="@id/net_job_detail_company_rating_bar"
+                    />
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="规模"
+                    android:id="@+id/net_job_detail_company_scale"
+                    android:paddingLeft="4dp"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/net_job_detail_company_type" android:layout_toLeftOf="@+id/imageView"
+                    android:layout_marginRight="36dp" android:textColor="@android:color/darker_gray"
+                    android:layout_marginLeft="4dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="公司行业"
+                    android:id="@+id/net_job_detail_company_industry_text_view"
+                    android:paddingLeft="4dp"
+                    android:textSize="12sp" android:layout_alignParentLeft="false"
+                    android:layout_below="@+id/net_job_detail_company_scale" android:layout_marginRight="32dp"
+                    android:textColor="@android:color/darker_gray" android:layout_marginLeft="4dp"/>
+            <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/imageView" android:layout_gravity="center"
+                    android:src="@drawable/forword"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:src="@android:color/darker_gray"
+                android:id="@+id/imageView1" android:layout_below="@id/net_job_detail_company_item_layout"/>
+        <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/webview_layout"
+                android:layout_below="@id/imageView1" android:layout_marginTop="8dp">
+            <com.weiyitech.zhaopinzh.util.webview.MyWebView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text=""
+                    android:id="@+id/net_job_detail_job_desc_web_view" android:layout_gravity="center"
+                    android:textSize="20sp" android:layout_marginLeft="18dp" android:layout_marginRight="18dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/webview_layout"
+                android:id="@+id/zhilian_layout"
+                android:layout_alignParentRight="true"
+                >
+            <ImageButton android:layout_height="20dp"
+                         android:layout_width="64dp"
+                         android:src="@drawable/zhilian"
+                         android:id="@+id/zhilian_img_btn"
+                         android:layout_marginRight="8dp">
+            </ImageButton>
+            <TextView android:layout_width="64dp"
+                      android:layout_height="wrap_content"
+                      android:text="更新："
+                      android:id="@+id/zhilian_update_label_text_view"
+                      android:layout_gravity="center"
+                      android:paddingLeft="4dp"
+                      android:textSize="12sp" android:layout_below="@id/zhilian_img_btn"
+                      android:layout_alignLeft="@id/zhilian_img_btn" android:layout_marginRight="8dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/webview_layout"
+                android:id="@+id/job51_layout"
+                android:layout_marginRight="72dp" android:layout_alignParentRight="true">
+            <ImageButton android:layout_height="20dp"
+                         android:layout_width="64dp"
+                         android:id="@+id/job51_img_btn" android:layout_alignParentRight="false"
+                         android:layout_marginRight="8dp" android:src="@drawable/job51">
+            </ImageButton>
+            <TextView android:layout_width="64dp"
+                      android:layout_height="wrap_content"
+                      android:text="更新："
+                      android:id="@+id/job51_update_label_text_view"
+                      android:layout_gravity="center"
+                      android:paddingLeft="4dp"
+                      android:textSize="12sp"
+                      android:layout_alignLeft="@id/job51_img_btn" android:layout_marginRight="8dp"
+                      android:layout_below="@+id/job51_img_btn"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/webview_layout"
+                android:id="@+id/chinahr_layout"
+                android:layout_marginRight="136dp" android:layout_alignParentRight="true">
+            <ImageButton android:layout_height="20dp"
+                         android:layout_width="64dp"
+                         android:id="@+id/chinahr_img_btn"
+                         android:layout_marginRight="8dp" android:src="@drawable/chinahr">
+            </ImageButton>
+            <TextView android:layout_width="64dp"
+                      android:layout_height="wrap_content"
+                      android:text="更新："
+                      android:id="@+id/chinahr_update_label_text_view"
+                      android:layout_gravity="center"
+                      android:paddingLeft="4dp"
+                      android:textSize="12sp"
+                      android:layout_alignLeft="@id/chinahr_img_btn" android:layout_marginRight="8dp"
+                      android:layout_below="@+id/chinahr_img_btn"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

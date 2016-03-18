@@ -1,0 +1,158 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="240dp"
+            android:layout_height="fill_parent"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
+        <RelativeLayout
+                android:layout_height="100dp"
+                android:layout_width="fill_parent"
+                android:id="@+id/behind_btn"
+                android:background="#14b4b2">
+            <Button android:layout_height="64dp"
+                    android:layout_width="64dp"
+                    android:background="@drawable/dot_focused"
+                    android:id="@+id/default_avatar"
+                    android:text="登录"
+                    android:textSize="14sp"
+                    android:padding="2dp" android:layout_marginTop="16dp" android:layout_marginLeft="16dp">
+            </Button>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_toRightOf="@id/default_avatar"
+                    android:id="@+id/nickname" android:layout_centerVertical="true" android:layout_marginLeft="32dp"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_toRightOf="@id/default_avatar"
+                    android:id="@+id/signatrue" android:layout_below="@+id/nickname"/>
+
+        </RelativeLayout>
+        <View android:layout_height="32dp"
+              android:layout_width="fill_parent"></View>
+        <RelativeLayout android:layout_height="48dp"
+                        android:layout_width="fill_parent"
+                        android:id="@+id/advertisement_activity_net_image_view"
+                        android:background="@drawable/list_item_selector_background">
+            <ImageView android:src="@drawable/net" android:layout_height="wrap_content" android:id="@+id/net_icon"
+                       android:layout_width="wrap_content" android:layout_marginLeft="48dp"
+                       android:layout_centerVertical="true"/>
+            <TextView android:layout_centerVertical="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="网络招聘"
+                      android:layout_toRightOf="@id/net_icon" android:layout_marginLeft="16dp"></TextView>
+        </RelativeLayout>
+        <RelativeLayout android:layout_height="48dp"
+                        android:layout_width="fill_parent"
+                        android:id="@+id/advertisement_activity_campus_image_view"
+                        android:background="@drawable/list_item_selector_background">
+            <ImageView android:src="@drawable/campus" android:layout_height="wrap_content" android:id="@+id/campus_icon"
+                       android:layout_width="wrap_content" android:layout_marginLeft="48dp"
+                       android:layout_centerVertical="true"/>
+            <TextView android:layout_centerVertical="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="校园宣讲"
+                      android:layout_toRightOf="@id/campus_icon" android:layout_marginLeft="16dp"></TextView>
+            <ImageView android:layout_width="16dp" android:layout_height="16dp"
+                       android:src="@drawable/new_hint"
+                       android:layout_marginRight="32dp"
+                       android:layout_marginTop="8dp"
+                       android:id="@+id/advertisement_activity_campus_new_hint_image_view"
+                       android:layout_alignParentRight="true"/>
+            <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:text="1"
+                    android:id="@+id/advertisement_activity_campus_new_text_view"
+                    android:textSize="10sp"
+                    android:layout_alignLeft="@id/advertisement_activity_campus_new_hint_image_view"
+                    android:layout_alignRight="@id/advertisement_activity_campus_new_hint_image_view"
+                    android:layout_alignTop="@id/advertisement_activity_campus_new_hint_image_view"
+                    android:layout_alignBottom="@id/advertisement_activity_campus_new_hint_image_view"
+                    android:gravity="center" android:textColor="#ffffff"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_height="48dp"
+                        android:layout_width="fill_parent"
+                        android:id="@+id/advertisement_activity_market_image_view"
+                        android:background="@drawable/list_item_selector_background">
+            <ImageView android:src="@drawable/market" android:layout_height="wrap_content" android:id="@+id/market_icon"
+                       android:layout_width="wrap_content" android:layout_marginLeft="48dp"
+                       android:layout_centerVertical="true"/>
+            <TextView android:layout_centerVertical="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="人才市场"
+                      android:layout_toRightOf="@id/market_icon" android:layout_marginLeft="16dp"></TextView>
+
+            <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/new_hint"
+                    android:id="@+id/advertisement_activity_market_new_hint_image_view"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_alignParentRight="true"/>
+            <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:text="1"
+                    android:id="@+id/advertisement_activity_market_new_text_view"
+                    android:textSize="10sp"
+                    android:layout_alignLeft="@id/advertisement_activity_market_new_hint_image_view"
+                    android:layout_alignRight="@id/advertisement_activity_market_new_hint_image_view"
+                    android:layout_alignTop="@id/advertisement_activity_market_new_hint_image_view"
+                    android:layout_alignBottom="@id/advertisement_activity_market_new_hint_image_view"
+                    android:gravity="center" android:textColor="#ffffff"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_height="48dp"
+                        android:layout_width="fill_parent"
+                        android:id="@+id/advertisement_activity_talk_image_view"
+                        android:background="@drawable/list_item_selector_background">
+            <ImageView android:src="@drawable/talk" android:layout_height="wrap_content" android:id="@+id/talk_icon"
+                       android:layout_width="wrap_content" android:layout_marginLeft="48dp"
+                       android:layout_centerVertical="true"/>
+            <TextView android:layout_centerVertical="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="讨论区"
+                      android:layout_toRightOf="@id/talk_icon" android:layout_marginLeft="16dp"></TextView>
+        </RelativeLayout>
+        <RelativeLayout android:layout_height="48dp"
+                        android:layout_width="fill_parent"
+                        android:id="@+id/net_job_activity_search_view"
+                        android:background="@drawable/list_item_selector_background">
+            <ImageView android:src="@drawable/abc_ic_search_api_holo_light" android:layout_height="wrap_content"
+                       android:id="@+id/search_icon"
+                       android:layout_width="wrap_content" android:layout_marginLeft="48dp"
+                       android:layout_centerVertical="true"/>
+            <TextView android:layout_centerVertical="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="搜索职位"
+                      android:layout_toRightOf="@id/search_icon" android:layout_marginLeft="16dp"></TextView>
+        </RelativeLayout>
+        <RelativeLayout android:layout_height="48dp"
+                        android:layout_width="fill_parent"
+                        android:id="@+id/net_job_activity_favorite_view"
+                        android:background="@drawable/list_item_selector_background">
+            <ImageView android:src="@drawable/favor" android:layout_height="wrap_content"
+                       android:id="@+id/favorite_icon"
+                       android:layout_width="wrap_content" android:layout_marginLeft="48dp"
+                       android:layout_centerVertical="true"/>
+            <TextView android:layout_centerVertical="true"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="我的收藏"
+                      android:layout_toRightOf="@id/favorite_icon" android:layout_marginLeft="16dp"></TextView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/preach_meeting_list_fragment_list_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:background="@drawable/list_item_selector_background"
+        >
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/preach_meeting_list_fragment_relative_layout" android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+        <TextView
+                android:id="@+id/preach_meeting_list_fragment_preach_name"
+                android:layout_width="250dp"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="false"
+                android:text="宣讲会名称"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="18sp"
+                android:layout_marginTop="4dp"
+                android:typeface="monospace" android:paddingLeft="4dp">
+        </TextView>
+        <TextView
+                android:id="@+id/preach_meeting_list_fragment_university"
+                android:layout_width="120dp"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/preach_meeting_list_fragment_preach_name"
+                android:layout_alignLeft="@id/preach_meeting_list_fragment_preach_name"
+                android:text="学校"
+                android:singleLine="false"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" android:typeface="serif" android:layout_marginTop="4dp"
+                android:paddingLeft="4dp"/>
+        <ImageView android:layout_width="18dp" android:layout_height="12dp"
+                   android:id="@+id/imageView"
+                   android:src="@drawable/map_mark" android:layout_alignLeft="@id/preach_meeting_list_fragment_university"
+                   android:paddingTop="2dp"
+                   android:paddingLeft="4dp"
+                   android:layout_below="@+id/preach_meeting_list_fragment_university" android:layout_marginTop="4dp"/>
+        <TextView android:id="@+id/preach_meeting_list_fragment_place"
+                  android:layout_width="120dp"
+                  android:gravity="left"
+                  android:layout_height="wrap_content"
+                  android:text="地点"
+                  android:singleLine="true" android:textColor="@android:color/darker_gray"
+                  android:textSize="12sp" android:typeface="serif"
+                  android:paddingLeft="4dp"
+                  android:layout_alignTop="@+id/imageView" android:layout_toRightOf="@+id/imageView"/>
+        <TextView
+                android:id="@+id/preach_meeting_list_fragment_begin_time_textview"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:text="02月01日 09:00"
+                android:paddingLeft="4dp"
+                android:layout_marginTop="4dp" android:layout_below="@+id/preach_meeting_list_fragment_place"
+                >
+        </TextView>
+        <TextView
+                android:id="@+id/preach_meeting_list_fragment_time_label"
+                android:layout_width="14dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/preach_meeting_list_fragment_place"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:text="至"
+                android:layout_toRightOf="@+id/preach_meeting_list_fragment_begin_time_textview"
+                android:layout_marginTop="4dp">
+        </TextView>
+        <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="02月01日 09:00"
+                android:id="@+id/preach_meeting_list_fragment_end_time_textview"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" android:paddingLeft="4dp"
+                android:layout_toRightOf="@+id/preach_meeting_list_fragment_time_label"
+                android:layout_alignTop="@+id/preach_meeting_list_fragment_begin_time_textview"/>
+        <ImageView
+                android:layout_width="14dp"
+                android:layout_height="10dp"
+                android:layout_below="@+id/preach_meeting_list_fragment_place"
+                android:id="@+id/preach_meeting_list_fragment_read_icon"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/read_icon" android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@+id/preach_meeting_list_fragment_end_time_textview"/>
+        <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:id="@+id/preach_meeting_list_fragment_read_times_text_view"
+                android:layout_toRightOf="@id/preach_meeting_list_fragment_read_icon"
+                android:layout_below="@+id/preach_meeting_list_fragment_place"
+                android:textColor="@android:color/darker_gray" android:textSize="12sp" android:paddingLeft="4dp"
+                android:layout_marginTop="4dp"/>
+        <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/preach_meeting_list_fragment_new_image_view"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/reddot"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical|center_horizontal"/>
+        <ImageButton
+                android:id="@+id/preach_meeting_list_fragment_favorite"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:padding="2dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:visibility="visible"
+                android:src="@drawable/selector"
+                android:background="@android:color/transparent" android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" android:layout_marginRight="8dp"/>
+    </RelativeLayout>
+</RelativeLayout>

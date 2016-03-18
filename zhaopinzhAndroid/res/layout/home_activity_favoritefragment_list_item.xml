@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:slide="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toggle_button_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:background="@drawable/list_item_selector_background"
+        >
+
+    <RelativeLayout
+            android:id="@+id/favorite_fragment_concise"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent" android:paddingLeft="16dp" android:paddingRight="16dp">
+            <TextView
+                    android:id="@+id/favorite_fragment_employer_name"
+                    android:layout_width="160dp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:focusableInTouchMode="false"
+                    android:text="企业名称"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:typeface="monospace" android:paddingLeft="4dp">
+            </TextView>
+            <TextView android:id="@+id/favorite_fragment_jobcounts"
+                      android:layout_width="120dp"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/favorite_fragment_employer_name"
+                      android:layout_alignLeft="@id/favorite_fragment_employer_name"
+                      android:text="发布职位："
+                      android:textColor="@android:color/darker_gray"
+                      android:textSize="16sp" android:layout_marginTop="4dp" android:paddingLeft="4dp"/>
+            <TextView
+                    android:id="@+id/favorite_fragment_job_hall"
+                    android:layout_width="120dp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/favorite_fragment_jobcounts"
+                    android:layout_alignLeft="@id/favorite_fragment_employer_name"
+                    android:text="江苏省人才市场"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp" android:paddingLeft="4dp"/>
+            <TextView
+                    android:id="@+id/favorite_fragment_time_textview"
+                    android:layout_width="120dp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/favorite_fragment_employer_name"
+                    android:layout_alignParentTop="true"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:text="2012-02-01" android:paddingLeft="4dp">
+            </TextView>
+            <TextView
+                    android:id="@+id/favorite_fragment_standpic"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/favorite_fragment_time_textview"
+                    android:layout_alignLeft="@id/favorite_fragment_time_textview"
+                    android:text="展位号 12"
+                    android:singleLine="false"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4dp" android:paddingLeft="4dp"/>
+            <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_alignLeft="@id/favorite_fragment_standpic"
+                    android:layout_below="@id/favorite_fragment_standpic"
+                    android:id="@+id/favorite_fragment_read_icon"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/read_icon" android:layout_marginLeft="4dp"/>
+            <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:id="@+id/favorite_fragment_read_times_text_view"
+                    android:layout_toRightOf="@id/favorite_fragment_read_icon"
+                    android:layout_below="@id/favorite_fragment_standpic"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="16sp" android:layout_marginTop="4dp" android:paddingLeft="4dp"/>
+            <ImageButton
+                    android:id="@+id/favorite_fragment_favorite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_toRightOf="@id/favorite_fragment_standpic"
+                    android:adjustViewBounds="true"
+                    android:visibility="visible"
+                    android:src="@drawable/ic_action_star_selected"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent" android:scaleType="fitXY" android:padding="2dp"
+                    android:layout_marginLeft="10dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+            android:id="@+id/expandable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/favorite_fragment_concise"
+            android:orientation="vertical" android:layout_marginLeft="72dp">
+    </LinearLayout>
+
+
+</RelativeLayout>
+

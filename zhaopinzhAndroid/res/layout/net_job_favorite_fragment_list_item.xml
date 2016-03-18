@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toggle_button_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+            android:id="@+id/net_favorite_fragment_concise"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/list_item_selector_background"
+            >
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent" android:paddingLeft="20dp" android:paddingRight="20dp">
+            <TextView
+                    android:id="@+id/net_favorite_fragment_job_name"
+                    android:layout_width="260dp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:focusableInTouchMode="false"
+                    android:text="职位名称"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:typeface="monospace" android:paddingLeft="4dp">
+            </TextView>
+            <TextView android:id="@+id/net_favorite_fragment_employer_name"
+                      android:layout_width="260dp"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/net_favorite_fragment_job_name"
+                      android:layout_alignLeft="@id/net_favorite_fragment_job_name"
+                      android:text="企业名称"
+                      android:textColor="@android:color/darker_gray"
+                      android:textSize="12sp"
+                      android:paddingLeft="4dp"/>
+            <TextView android:layout_width="220dp" android:layout_height="wrap_content" android:text="薪资待遇"
+                      android:id="@+id/net_favorite_fragment_payment_text_view"
+                      android:textColor="#f0836e" android:textSize="16sp"
+                      android:layout_below="@+id/net_favorite_fragment_employer_name" android:paddingLeft="4dp"
+                      android:layout_alignLeft="@+id/net_favorite_fragment_employer_name"/>
+            <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/net_favorite_fragment_read_icon"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/read_icon"
+                    android:layout_below="@+id/net_favorite_fragment_payment_text_view"
+                    android:layout_toLeftOf="@+id/net_favorite_fragment_read_times_text_view"
+                    android:layout_marginTop="2dp"/>
+            <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:id="@+id/net_favorite_fragment_read_times_text_view"
+                    android:textSize="12sp"
+                    android:layout_below="@+id/net_favorite_fragment_payment_text_view"
+                    android:paddingLeft="4dp"
+                    android:layout_alignRight="@+id/net_favorite_fragment_favorite"/>
+            <ImageButton
+                    android:id="@+id/net_favorite_fragment_favorite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    android:src="@drawable/ic_action_star_selected"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true" android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp" android:padding="2dp"/>
+            <TextView android:layout_width="180dp" android:layout_height="wrap_content" android:text="工作地点"
+                      android:id="@+id/net_favorite_fragment_workplace_text_view" android:textColor="@android:color/darker_gray"
+                      android:textSize="12sp"
+                      android:layout_below="@+id/net_favorite_fragment_payment_text_view" android:paddingLeft="4dp"
+                      android:layout_toRightOf="@+id/address_img_view"/>
+            <ImageView android:layout_width="18dp" android:layout_height="12dp"
+                       android:id="@+id/address_img_view"
+                       android:src="@drawable/map_mark"
+                       android:layout_alignParentLeft="false"
+                       android:layout_alignLeft="@+id/net_favorite_fragment_payment_text_view"
+                       android:layout_below="@+id/net_favorite_fragment_payment_text_view" android:paddingLeft="4dp"
+                       android:paddingTop="2dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

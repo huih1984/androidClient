@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/search_activity_list_item"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content" android:paddingRight="8dp"
+              android:paddingLeft="8dp">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginRight="64dp"
+            android:text="New Text"
+            android:textSize="16sp"
+            android:id="@+id/search_condition_activity_item_text_view"
+            android:layout_gravity="center" android:gravity="left|center_vertical"/>
+    <ImageView
+            android:layout_width="32dp"
+            android:layout_height="18dp"
+            android:id="@+id/search_condition_activity_item_image_view" android:layout_gravity="center"
+            android:src="@drawable/search_condition_selector"
+            android:layout_centerVertical="true" android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

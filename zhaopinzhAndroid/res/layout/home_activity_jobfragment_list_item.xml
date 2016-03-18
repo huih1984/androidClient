@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:slide="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toggle_button_id"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:background="@drawable/list_item_selector_background"
+        >
+    <RelativeLayout
+            android:id="@+id/job_fragment_concise"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+        <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent" android:paddingLeft="16dp" android:paddingRight="16dp">
+            <TextView
+                    android:id="@+id/job_fragment_employer_name"
+                    android:layout_width="260dp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:focusableInTouchMode="false"
+                    android:text="企业名称"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="18sp"
+                    android:layout_marginTop="4dp"
+                    android:typeface="monospace" android:paddingLeft="4dp">
+            </TextView>
+            <TextView android:id="@+id/job_fragment_jobcounts"
+                      android:layout_width="260dp"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/job_fragment_employer_name"
+                      android:layout_alignLeft="@id/job_fragment_employer_name"
+                      android:text="发布职位："
+                      android:textColor="@android:color/darker_gray"
+                      android:textSize="12sp" android:layout_marginTop="4dp" android:paddingLeft="4dp"/>
+            <ImageView android:layout_width="18dp" android:layout_height="12dp"
+                       android:id="@+id/imageView"
+                       android:src="@drawable/map_mark" android:layout_alignLeft="@id/job_fragment_employer_name"
+                        android:paddingTop="2dp"
+                       android:paddingLeft="4dp"
+                       android:layout_below="@+id/job_fragment_jobcounts" android:layout_marginTop="4dp"/>
+            <TextView
+                    android:id="@+id/job_fragment_job_hall"
+                    android:layout_width="100dp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/job_fragment_jobcounts"
+                    android:text="江苏省人才市场"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp" android:paddingLeft="4dp"
+                    android:layout_toRightOf="@+id/imageView"/>
+            <TextView
+                    android:id="@+id/job_fragment_time_textview"
+                    android:layout_width="80dp"
+                    android:gravity="left"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="6dp"
+                    android:text="2012-02-01" android:paddingLeft="4dp"
+                    android:layout_below="@+id/job_fragment_job_hall"
+                    android:layout_marginLeft="4dp">
+            </TextView>
+            <TextView
+                    android:id="@+id/job_fragment_standpic"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/job_fragment_jobcounts"
+                    android:text="展位号 12"
+                    android:singleLine="false"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:layout_marginTop="4dp" android:paddingLeft="4dp"
+                    android:layout_toRightOf="@+id/job_fragment_job_hall"/>
+            <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@id/job_fragment_standpic"
+                    android:id="@+id/job_fragment_read_icon"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/read_icon" android:layout_marginLeft="124dp"
+                    android:layout_toRightOf="@+id/job_fragment_time_textview"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:id="@+id/job_fragment_read_times_text_view"
+                    android:layout_toRightOf="@id/job_fragment_read_icon"
+                    android:layout_below="@id/job_fragment_standpic"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp" android:layout_marginTop="4dp" android:paddingLeft="4dp"/>
+            <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="10dp"
+                    android:id="@+id/job_fragment_conversation"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/job_fragment_read_times_text_view"
+                    android:layout_below="@id/job_fragment_standpic"
+                    android:src="@drawable/comment"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:id="@+id/job_fragment_cment_cnt_text_view"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:layout_toRightOf="@id/job_fragment_conversation"
+                    android:layout_below="@id/job_fragment_standpic"
+                    android:paddingLeft="4dp" android:layout_marginTop="4dp"/>
+            <ImageButton
+                    android:id="@+id/job_fragment_favorite"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:visibility="visible"
+                    android:src="@drawable/selector"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent" android:padding="2dp"
+                    android:layout_marginLeft="10dp" android:layout_alignParentRight="true"/>
+            <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:id="@+id/job_fragment_new_image_view"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/reddot"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_vertical|center_horizontal" android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+            android:id="@+id/expandable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/job_fragment_concise"
+            android:orientation="vertical" android:layout_marginLeft="72dp">
+    </LinearLayout>
+</RelativeLayout>
